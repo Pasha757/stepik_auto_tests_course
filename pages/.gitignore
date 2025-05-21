@@ -1,0 +1,43 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches and temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# pytest cache
+.cache/
+.pytest_cache/
+
+# mypy cache
+.mypy_cache/
+
+# coverage reports
+htmlcov/
+.coverage
+coverage.xml
+
+# test output
+*.un~         # резервные файлы, которые ты упоминал
+*.out
+*.err
+
+# virtual environments
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# VSCode and other IDEs
+.vscode/
+.idea/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
