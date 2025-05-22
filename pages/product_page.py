@@ -12,18 +12,13 @@ class MainPage(BasePage):
         add_to_basket_button.click()
         return product_name, product_price
 
-    def view_basket(self):
-        view_basket_button = self.browser.find_element(*MainPageLocators.VIEW_BASKET_BUTTON)
-        view_basket_button.click()
+    def is_product_name_correct(self, product_name):
         time.sleep(5)
-
-    def is_product_name_in_basket_correct(self, product_name):
         product_name_basket = self.browser.find_element(*MainPageLocators.PRODUCT_NAME_BASKET).text
         assert product_name == product_name_basket, f"Product name in basket is not correct: {product_name} != {product_name_basket}"
 
-    def is_product_price_in_basket_correct(self, product_price):
+    def is_product_price_correct(self, product_price):
+        time.sleep(5)
         product_price_basket = self.browser.find_element(*MainPageLocators.PRODUCT_PRICE_BASKET).text
         assert product_price == product_price_basket, f"Product price in basket is not correct: {product_price} != {product_price_basket}"
-
-    
 
