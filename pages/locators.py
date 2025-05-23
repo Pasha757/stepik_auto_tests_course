@@ -6,6 +6,6 @@ class MainPageLocators():
     PRODUCT_NAME = (By.CSS_SELECTOR, ".product_main h1")
     PRODUCT_PRICE = (By.CSS_SELECTOR, ".product_main .price_color")
     PRODUCT_NAME_BASKET = (By.CSS_SELECTOR, "div.alert-safe strong")
-    PRODUCT_PRICE_BASKET = (By.CSS_SELECTOR, "div.alert-safe strong:nth-of-type(3)")
+    PRODUCT_PRICE_BASKET = (By.CSS_SELECTOR, "div.alert-info strong")
     
 
