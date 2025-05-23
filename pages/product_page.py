@@ -21,4 +21,11 @@ class MainPage(BasePage):
         time.sleep(5)
         product_price_basket = self.browser.find_element(*MainPageLocators.PRODUCT_PRICE_BASKET).text
         assert product_price == product_price_basket, f"Product price in basket is not correct: {product_price} != {product_price_basket}"
+    
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*MainPageLocators.SUCCESS_MESSAGE), \
+           "Success message is presented, but should not be"
 
+    def success_message_should_disappear(self):
+        assert self.is_disappeared(*MainPageLocators.SUCCESS_MESSAGE), \
+           "Success message is present, but should disappear"
