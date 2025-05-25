@@ -9,4 +9,9 @@ class MainPageLocators():
     PRODUCT_PRICE_BASKET = (By.CSS_SELECTOR, "div.alert-info strong")
     SUCCESS_MESSAGE = (By.CSS_SELECTOR, "div.alert-success")
     
+class BasePageLocators():
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+    BASKET_LINK = (By.CSS_SELECTOR, ".btn[href='/en-gb/basket/']")
+    BASKET_EMPTY_TEXT =  (By.CSS_SELECTOR, "#content_inner p")
 

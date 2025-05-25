@@ -5,6 +5,9 @@ import time
 
 
 class MainPage(BasePage):
+    def __init__(self, *args, **kwargs):
+        super(MainPage, self).__init__(*args, **kwargs)
+
     def add_to_basket(self):
         product_name = self.browser.find_element(*MainPageLocators.PRODUCT_NAME).text
         product_price = self.browser.find_element(*MainPageLocators.PRODUCT_PRICE).text
