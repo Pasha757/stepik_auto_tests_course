@@ -14,4 +14,10 @@ class BasePageLocators():
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
     BASKET_LINK = (By.CSS_SELECTOR, ".btn[href='/en-gb/basket/']")
     BASKET_EMPTY_TEXT =  (By.CSS_SELECTOR, "#content_inner p")
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
 
+class LoginPageLocators():
+    REGISTRATION_EMAIL = (By.NAME, "registration-email")
+    REGISTRATION_PASSWORD1 = (By.NAME, "registration-password1")
+    REGISTRATION_PASSWORD2 = (By.NAME, "registration-password2")
+    REGISTRATION_SUBMIT = (By.NAME, "registration_submit")

@@ -4,9 +4,9 @@ from .locators import MainPageLocators
 import time
 
 
-class MainPage(BasePage):
+class ProductPage(BasePage):
     def __init__(self, *args, **kwargs):
-        super(MainPage, self).__init__(*args, **kwargs)
+        super(ProductPage, self).__init__(*args, **kwargs)
 
     def add_to_basket(self):
         product_name = self.browser.find_element(*MainPageLocators.PRODUCT_NAME).text

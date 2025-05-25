@@ -31,3 +31,8 @@ def browser(request):
     print("\nQuit browser..")
     browser.quit()
 
+def pytest_configure(config):
+    config.addinivalue_line(
+        "markers", "need_review: mark test as needing review"
+    )
+
